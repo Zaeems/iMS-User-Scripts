@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         iMS - Resizeable Textboxes
-// @namespace    http://tampermonkey.net/
+// @namespace    http://imssystems.tech/
 // @version      0.1.1
 // @description  Gives all large textboxes a draggable resize button.
 // @author       Zaeem
