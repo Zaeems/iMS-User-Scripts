@@ -26,3 +26,4 @@ addGlobalStyle('.white-content .card:not(.card-white) .card-body .card-category,
 addGlobalStyle('.text-muted {color: #000000!important;}')
 addGlobalStyle('::-webkit-scrollbar-thumb {background-color: #ff00006b;}')
 addGlobalStyle('::-webkit-scrollbar-track {background-color: #f7d6d666;}')
+addGlobalStyle('.white-content .modal .modal-dialog .modal-content .modal-body h1, .white-content .modal .modal-dialog .modal-content .modal-body h2, .white-content .modal .modal-dialog .modal-content .modal-body h3, .white-content .modal .modal-dialog .modal-content .modal-body h4, .white-content .modal .modal-dialog .modal-content .modal-body h5, .white-content .modal .modal-dialog .modal-content .modal-body h6, .white-content .modal .modal-dialog .modal-content .modal-body p {color: #000000;}')
