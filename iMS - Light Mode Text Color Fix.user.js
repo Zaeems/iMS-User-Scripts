@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         iMS - Light Mode Text Color Fix
 // @namespace    http://imssystems.tech/
-// @version      0.1.3
-// @description  Gives all large textboxes a draggable resize button.
+// @version      0.1.4
+// @description  Makes greens and reds darker.
 // @author       Zaeem
 // @match        https://*.imssystems.tech/admin/*
 // @icon         https://staging.imssystems.tech/favicon.png
