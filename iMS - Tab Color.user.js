@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         iMS - Tab Color
 // @namespace    http://imssystems.tech/
-// @version      0.0.3
+// @version      0.0.4
 // @description  Changes tab color to sidebar
 // @author       Zaeem
 // @match        https://*.imssystems.tech/admin/*
@@ -19,5 +19,5 @@ function addGlobalStyle(css) {
 }
 
 addGlobalStyle('.nav-pills.nav-pills-info .nav-item .nav-link.active, .nav-pills.nav-pills-info .nav-item .nav-link.active:focus, .nav-pills.nav-pills-info .nav-item .nav-link.active:hover{background-color: #e14eca;}')
-addGlobalStyle{'.nav-pills.nav-pills-info .nav-item .nav-link.active, .nav-pills.nav-pills-info .nav-item .nav-link.active:focus, .nav-pills.nav-pills-info .nav-item .nav-link.active:hover{background-image: linear-gradient(to bottom left,#d64fd5,#d450d8,#d450d8);}')
+addGlobalStyle('.nav-pills.nav-pills-info .nav-item .nav-link.active, .nav-pills.nav-pills-info .nav-item .nav-link.active:focus, .nav-pills.nav-pills-info .nav-item .nav-link.active:hover{background-image: #e14eca;}')
 ();
