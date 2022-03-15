@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         iMS - Resizeable Textboxes
 // @namespace    http://imssystems.tech/
-// @version      0.1.3
+// @version      0.1.4
 // @description  Gives all large textboxes a draggable resize button.
 // @author       Zaeem
-// @match        https://*.imssystems.tech/admin/*
+// @match        https://*.imssystems.tech/*
 // @icon         https://staging.imssystems.tech/favicon.png
 // ==/UserScript==
 
