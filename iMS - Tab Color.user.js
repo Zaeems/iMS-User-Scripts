@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         iMS - Tab Color
 // @namespace    http://imssystems.tech/
-// @version      0.0.5
+// @version      0.0.6
 // @description  Changes tab color to sidebar
 // @author       Zaeem
-// @match        https://*.imssystems.tech/admin/*
+// @match        https://*.imssystems.tech/*
 // @icon         https://staging.imssystems.tech/favicon.png
 // ==/UserScript==
 
