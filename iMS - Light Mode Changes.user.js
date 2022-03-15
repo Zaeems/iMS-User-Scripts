@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name         iMS - Light Mode Text Color Fix
+// @name         iMS - Light Mode Changes
 // @namespace    http://imssystems.tech/
-// @version      0.1.5
+// @version      0.1.6
 // @description  Makes greens and reds darker.
 // @author       Zaeem
-// @match        https://*.imssystems.tech/admin/*
+// @match        https://*.imssystems.tech/*
 // @icon         https://staging.imssystems.tech/favicon.png
 // ==/UserScript==
 
