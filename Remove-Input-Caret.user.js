@@ -1,12 +1,11 @@
 // ==UserScript==
 // @name         iMS - Remove Input Caret
 // @namespace    http://imssystems.tech/
-// @version      0.1.0
+// @version      0.1.1
 // @description  Removes input caret from all input boxes.
 // @author       Zaeem
 // @match        https://*.imssystems.tech/admin/*
 // @icon         https://staging.imssystems.tech/favicon.png
-// @grant        none
 // ==/UserScript==
 
 function addGlobalStyle(css) {
