@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         iMS - FULL Sidebar
 // @namespace    http://imssystems.tech/
-// @version      0.1.3
+// @version      0.1.4
 // @description  Makes the sidebar height double
 // @author       You
 // @match        https://*.imssystems.tech/*
@@ -19,5 +19,5 @@ function addGlobalStyle(css) {
 }
 
 addGlobalStyle('.sidebar {height: 200%!important;}')
-addGlobalStyle('.footer .nav-item:first-child a {padding-left: 10rem;}')
+addGlobalStyle('.footer .nav {margin-left: 15rem;}')
 ();
