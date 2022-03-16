@@ -1,12 +1,16 @@
 // ==UserScript==
 // @name         iMS - FULL Sidebar
 // @namespace    http://imssystems.tech/
-// @version      0.1.4
+// @version      0.1.5
 // @description  Makes the sidebar height double
 // @author       You
 // @match        https://*.imssystems.tech/*
 // @icon         https://staging.imssystems.tech/favicon.png
 // ==/UserScript==
+
+function toggleOnLoad(){
+    document.getElementsByClass("minimize-sidebar")[0].click();
+}
 
 function addGlobalStyle(css) {
     var head, style;
@@ -18,6 +22,8 @@ function addGlobalStyle(css) {
     head.appendChild(style);
 }
 
-addGlobalStyle('.sidebar {height: 200%!important;}')
+addGlobalStyle('.sidebar {height: 200%!important; margin-top: 0px;}')
 addGlobalStyle('.footer .nav {margin-left: 15rem;}')
+addGlobalStyle('.navbar .navbar-brand {margin-left: 11rem;}')
+toggleOnLoad()
 ();
