@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         iMS - Light Mode Changes
 // @namespace    http://imssystems.tech/
-// @version      0.1.6
+// @version      0.1.7
 // @description  Makes greens and reds darker.
 // @author       Zaeem
 // @match        https://*.imssystems.tech/*
@@ -28,3 +28,4 @@ addGlobalStyle('::-webkit-scrollbar-track {background-color: #f7d6d666;}')
 addGlobalStyle('.white-content .modal .modal-dialog .modal-content .modal-body h1, .white-content .modal .modal-dialog .modal-content .modal-body h2, .white-content .modal .modal-dialog .modal-content .modal-body h3, .white-content .modal .modal-dialog .modal-content .modal-body h4, .white-content .modal .modal-dialog .modal-content .modal-body h5, .white-content .modal .modal-dialog .modal-content .modal-body h6, .white-content .modal .modal-dialog .modal-content .modal-body p {color: #000000;}')
 addGlobalStyle('.white-content .ReactTable .rt-td, .white-content .ReactTable .rt-thead .rt-th{color: rgb(0 0 0)!important;}')
 addGlobalStyle('.ReactTable .rt-td {color: hsl(0deg 0% 25% / 80%)!important;}')
+addGlobalStyle('.sidebar {background: linear-gradient(0deg,#e14eca,#e14eca);}')
