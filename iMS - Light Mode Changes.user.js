@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         iMS - Light Mode Changes
 // @namespace    http://imssystems.tech/
-// @version      0.2.2
+// @version      0.2.4
 // @description  Makes light mode superior.
 // @author       Zaeem
 // @match        https://*.imssystems.tech/*
@@ -17,6 +17,15 @@ function addGlobalStyle(css) {
     style.innerHTML = css;
     head.appendChild(style);
 }
+
+window.addEventListener('load', function (){ // enables light mode
+    var ele = document.getElementById('switch-2')
+    if(ele.value == "false")
+    { ele.click(); /*alert('clicked')*/ }
+    else
+    { alert('alr superior mode') }
+    //document.body.className="white-content";
+    })
 
 // make main scrollbar red, with transparent-red background
 addGlobalStyle('::-webkit-scrollbar-thumb {background-color: #ff00006b;}')
