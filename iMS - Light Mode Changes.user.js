@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         iMS - Light Mode Changes
 // @namespace    http://imssystems.tech/
-// @version      0.2.0
+// @version      0.2.1
 // @description  Makes greens and reds darker.
 // @author       Zaeem
 // @match        https://*.imssystems.tech/*
