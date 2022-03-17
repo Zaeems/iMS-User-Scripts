@@ -2,7 +2,7 @@
 /* globals jQuery, $, waitForKeyElements */
 // @name         iMS - FULL Sidebar
 // @namespace    http://imssystems.tech/
-// @version      0.1.9
+// @version      0.2.0
 // @description  Makes the sidebar height double
 // @author       You
 // @match        https://*.imssystems.tech/*
@@ -41,6 +41,7 @@ addGlobalStyle('.sidebar {height: 200%!important; margin-top: 0px;}')
 addGlobalStyle('.footer .nav {margin-left: 15rem;}')
 addGlobalStyle('.navbar .navbar-brand {margin-left: 11rem;}')
 addGlobalStyle('.sidebar {border-radius: 0px;}')
+addGlobalStyle('.text-light {color: #adb5bd00!important;}')
 toggleOnLoad()
 
 ();
