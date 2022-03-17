@@ -31,4 +31,7 @@ addGlobalStyle('.ReactTable .rt-td {color: hsl(0deg 0% 25% / 80%)!important;}')
 addGlobalStyle('.sidebar {background: linear-gradient(0deg,#e14eca,#e14eca);}')
 addGlobalStyle('body {font-family: "Trebuchet MS"}')
 addGlobalStyle('.ReactTable .rt-thead .rt-th.-cursor-pointer>div:first-of-type:after, .ReactTable .rt-thead .rt-th.-cursor-pointer>div:first-of-type:before {opacity: 0.7;}')
+
+// force red sidebar to become purple
+addGlobalStyle('.off-canvas-sidebar[data=red], .sidebar[data=red] {background: linear-gradient(0deg,#e14eca,#e14eca);}')
 ();
