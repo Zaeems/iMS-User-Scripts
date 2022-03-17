@@ -2,16 +2,12 @@
 /* globals jQuery, $, waitForKeyElements */
 // @name         iMS - FULL Sidebar
 // @namespace    http://imssystems.tech/
-// @version      0.2.0
+// @version      0.2.1
 // @description  Makes the sidebar height double
 // @author       You
 // @match        https://*.imssystems.tech/*
 // @icon         https://staging.imssystems.tech/favicon.png
 // ==/UserScript==
-
-/*function toggleOnLoad(){
-    document.getElementsByClass("minimize-sidebar")[0].click();
-}*/
 
 function addGlobalStyle(css) {
     var head, style;
@@ -22,19 +18,9 @@ function addGlobalStyle(css) {
     style.innerHTML = css;
     head.appendChild(style);
 }
-/*function toggleOnLoad(){
-  $(document).ready(function() {
-    var doc = $(document).find("switch-1");
-    doc.each(function() {
-       if ($(this).class() == "custom-control-input") {
-         $(this).click();
-       }
-    });
-  });
-}*/
 
 function toggleOnLoad(){
-document.getElementById('switch-1').click(); // = 'true';
+    document.getElementById('switch-1').click(); // enables full sidebar on login
 }
 
 addGlobalStyle('.sidebar {height: 200%!important; margin-top: 0px;}')
@@ -43,5 +29,4 @@ addGlobalStyle('.navbar .navbar-brand {margin-left: 11rem;}')
 addGlobalStyle('.sidebar {border-radius: 0px;}')
 addGlobalStyle('.text-light {color: #adb5bd00!important;}')
 toggleOnLoad()
-
 ();
