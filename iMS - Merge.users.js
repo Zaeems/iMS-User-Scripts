@@ -2,23 +2,25 @@
 /* globals jQuery, $, waitForKeyElements */
 // @name         iMS - Merge
 // @namespace    http://imssystems.tech/
-// @version      0.1.1
+// @version      0.1.3
 // @description  try to take over the world!
 // @author       You
-// @match        https://*.imssystems.tech/*
+// @include      https://*.imssystems.tech/*
 // @icon         https://staging.imssystems.tech/favicon.png
 // @grant GM_log
+// @grant window.onurlchange
 // ==/UserScript==
 
+
 window.onload = function(){
-       document.body.className="white-content";
+    GM_log('window loaded');
+    document.body.className="white-content";
 };
 
-window.addEventListener('load', function (){
-    setInterval(function(){
-        GM_log('test');
-    }, 5000);
-});
+window.onurlchange = function(){
+    GM_log('url changed');
+    document.body.className="white-content";
+}
 
 function addGlobalStyle(css) {
     var head, style;
@@ -29,6 +31,10 @@ function addGlobalStyle(css) {
     style.innerHTML = css;
     head.appendChild(style);
 }
+
+addGlobalStyle('.main-panel {background:#f5f6fa};')
+
+addGlobalStyle('body {background-color: #fff};')
 
 // make main scrollbar red, with transparent-red background
 addGlobalStyle('::-webkit-scrollbar-thumb {background-color: #ff00006b;}')
@@ -51,7 +57,7 @@ addGlobalStyle('.card .card-header .card-category {color: #000000;}')
 addGlobalStyle('.ReactTable .rt-td {color: hsl(0deg 0% 25% / 80%)!important;}')
 
 // change font to trebuchet
-addGlobalStyle('body {font-family: "Trebuchet MS"}')
+addGlobalStyle('body {font-family: "Noto Sans", "Trebuchet MS"}')
 
 // adjust sortBy to be more visible
 addGlobalStyle('.ReactTable .rt-thead .rt-th.-cursor-pointer>div:first-of-type:after, .ReactTable .rt-thead .rt-th.-cursor-pointer>div:first-of-type:before {opacity: 0.7;}')
