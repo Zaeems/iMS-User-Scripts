@@ -2,7 +2,7 @@
 /* globals jQuery, $, waitForKeyElements */
 // @name         iMS - Merge (Dark)
 // @namespace    http://imssystems.tech/
-// @version      0.1.0
+// @version      0.1.1
 // @description  try to take over the world!
 // @author       You
 // @include      https://*.imssystems.tech/*
@@ -31,9 +31,9 @@ function addGlobalStyle(css) {
     head.appendChild(style);
 }
 
-// make main scrollbar red, with transparent-red background
-addGlobalStyle('::-webkit-scrollbar-thumb {background-color: #ff00006b;}')
-addGlobalStyle('::-webkit-scrollbar-track {background-color: #f7d6d666;}')
+// make main scrollbar purple, with transparent-purple background
+addGlobalStyle('::-webkit-scrollbar-thumb {background-color: #e14eca;}')
+addGlobalStyle('::-webkit-scrollbar-track {background-color: #fbe9f9;}')
 
 // make green and red texts darker, to be more readable
 addGlobalStyle('.text-success {color: #008000!important;}')
@@ -52,6 +52,12 @@ addGlobalStyle('.off-canvas-sidebar[data=red], .sidebar[data=red] {background: l
 addGlobalStyle('.off-canvas-sidebar[data=orange], .sidebar[data=orange] {background: linear-gradient(0deg,#e14eca,#e14eca);}')
 addGlobalStyle('.off-canvas-sidebar[data=green], .sidebar[data=green] {background: linear-gradient(0deg,#e14eca,#e14eca);}')
 addGlobalStyle('.off-canvas-sidebar[data=blue], .sidebar[data=blue] {background: linear-gradient(0deg,#e14eca,#e14eca);}')
+
+// make border-top purple
+addGlobalStyle('.main-panel[data=blue]{border-top: 2px solid #e14eca;}')
+addGlobalStyle('.main-panel[data=green]{border-top: 2px solid #e14eca;}')
+addGlobalStyle('.main-panel[data=orange]{border-top: 2px solid #e14eca;}')
+addGlobalStyle('.main-panel[data=red]{border-top: 2px solid #e14eca;}')
 
     // FULLSIDEBAR
 addGlobalStyle('.sidebar {height: 200%!important; margin-top: 0px;border-radius: 0px;}') // Improved sidebar
