@@ -67,10 +67,13 @@ addGlobalStyle('.navbar .navbar-brand {margin-left: 11rem;}') // Shove navbar to
     // MODAL
 addGlobalStyle(':root {--sidebar-width: 230px;}')
 addGlobalStyle('.sidebar {width: var(--sidebar-width);}')
-addGlobalStyle('.modal-dialog {margin-left: calc(var(--sidebar-width) + 30px);}')
+addGlobalStyle('.modal-dialog {margin-left: calc(var(--sidebar-width) + 30px); margin-top: 1rem;}')
 
     // REMOVEINPUTCARET
 addGlobalStyle('input { caret-color: transparent; }') // remove input caret
+
+    // REMOVETOGGLE
+addGlobalStyle('.navbar-minimize-fixed { display:none; }')
 
     // RESIZABLETEXTBOXES
 addGlobalStyle('textarea.form-control {resize: vertical;}')
