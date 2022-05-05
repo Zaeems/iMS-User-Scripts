@@ -2,7 +2,7 @@
 /* globals jQuery, $, waitForKeyElements */
 // @name         iMS - Merge (Dark)
 // @namespace    http://imssystems.tech/
-// @version      0.1.1
+// @version      0.1.2
 // @description  try to take over the world!
 // @author       You
 // @include      https://*.imssystems.tech/*
@@ -64,11 +64,16 @@ addGlobalStyle('.sidebar {height: 200%!important; margin-top: 0px;border-radius:
 addGlobalStyle('.footer .nav {margin-left: 15rem;}') // Shove footer to side to accomodate sidebar resize
 addGlobalStyle('.navbar .navbar-brand {margin-left: 11rem;}') // Shove navbar to side to accomodate sidebar resize
 
+    // MODAL
+addGlobalStyle(':root {--sidebar-width: 230px;}')
+addGlobalStyle('.sidebar {width: var(--sidebar-width);}')
+addGlobalStyle('.modal-dialog {margin-left: calc(var(--sidebar-width) + 30px);}')
+
     // REMOVEINPUTCARET
 addGlobalStyle('input { caret-color: transparent; }') // remove input caret
 
     // RESIZABLETEXTBOXES
-addGlobalStyle('* textarea.form-control, .card-login.card-white textarea.form-control, .login-page textarea.form-control {resize: vertical;}')
+addGlobalStyle('textarea.form-control {resize: vertical;}')
 
     // TABCOLOR
 addGlobalStyle('.nav-pills.nav-pills-info .nav-item .nav-link.active, .nav-pills.nav-pills-info .nav-item .nav-link.active:focus, .nav-pills.nav-pills-info .nav-item .nav-link.active:hover{background-color: #e14eca;}')
