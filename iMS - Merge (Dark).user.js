@@ -72,7 +72,7 @@ addGlobalStyle('.modal-dialog {margin-left: calc(var(--sidebar-width) + 30px); m
     // REMOVEINPUTCARET
 addGlobalStyle('input { caret-color: transparent; }') // remove input caret
 
-    // REMOVETOGGLE
+    // REMOVE Toggle button
 addGlobalStyle('.navbar-minimize-fixed { display:none; }')
 
     // RESIZABLETEXTBOXES
@@ -81,3 +81,7 @@ addGlobalStyle('textarea.form-control {resize: vertical;}')
     // TABCOLOR
 addGlobalStyle('.nav-pills.nav-pills-info .nav-item .nav-link.active, .nav-pills.nav-pills-info .nav-item .nav-link.active:focus, .nav-pills.nav-pills-info .nav-item .nav-link.active:hover{background-color: #e14eca;}')
 addGlobalStyle('.nav-pills.nav-pills-info .nav-item .nav-link.active, .nav-pills.nav-pills-info .nav-item .nav-link.active:focus, .nav-pills.nav-pills-info .nav-item .nav-link.active:hover{background-image: linear-gradient(to bottom left,#e14eca,#e14eca,#1d8cf8);}')
+
+    // Fix body + footer going blue
+addGlobalStyle('.main-panel>.content {background-color: #1e1e24;}')
+addGlobalStyle('.footer {background-color: #1e1e24;}')
