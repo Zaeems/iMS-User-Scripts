@@ -2,7 +2,7 @@
 /* globals jQuery, $, waitForKeyElements */
 // @name         iMS - Merge (Dark)
 // @namespace    http://imssystems.tech/
-// @version      0.1.2
+// @version      0.1.3
 // @description  try to take over the world!
 // @author       You
 // @include      https://*.imssystems.tech/*
@@ -30,6 +30,13 @@ function addGlobalStyle(css) {
     style.innerHTML = css;
     head.appendChild(style);
 }
+
+// map resize
+addGlobalStyle('.google-map {height:80vh;}')
+
+// modal resize
+addGlobalStyle('.modal-content {height:95vh;}')
+addGlobalStyle('.modal-content {width:85.5vw;}')
 
 // make main scrollbar purple, with transparent-purple background
 addGlobalStyle('::-webkit-scrollbar-thumb {background-color: #e14eca;}')
