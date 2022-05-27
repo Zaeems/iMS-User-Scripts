@@ -82,7 +82,7 @@ addGlobalStyle('.google-map {height:80vh;}') // resize google map (width is auto
     // modal (and respectively sidebar) resize
 addGlobalStyle('.modal-content {height:var(--modal-height;)}') // set modal height
 addGlobalStyle('.modal-content {width:var(--modal-width);}') // set modal width
-addGlobalStyle('.modal .modal-dialog .modal-content {background-color:var(--background-color);}') // set modal bg color to main bg color
+addGlobalStyle('.modal-content {background-color:var(--content-bg-color) !important;}') // set modal bg color to main bg color
 addGlobalStyle('.sidebar {width: var(--sidebar-width);}') // set sidebar width to variable value
 addGlobalStyle('.modal-dialog {margin-left: calc(var(--sidebar-width) + 10px); margin-top: 1rem;}') // make modal start next to sidebar
 
