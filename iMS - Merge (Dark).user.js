@@ -2,7 +2,7 @@
 /* globals jQuery, $, waitForKeyElements */
 // @name         iMS - Merge (Dark)
 // @namespace    http://imssystems.tech/
-// @version      0.1.3
+// @version      0.1.5
 // @description  try to take over the world!
 // @author       You
 // @include      https://*.imssystems.tech/*
@@ -34,26 +34,45 @@ function addGlobalStyle(css) {
 // -- START OF SETTINGS
 // ADJUST YOUR SETTINGS HERE
 
-// This is the color for the sidebar
-addGlobalStyle(':root {--sidebar-colour: linear-gradient(0deg,#e14eca,#e14eca);}')
+var sidebarColor = '#e14eca' // sidebar color
+var sidebarWidth = '250px' // sidebar width
+var sidebarHeaderFontSize = '0.9rem' // sidebar headers' font size
+var sidebarSubHeaderFontSize = '0.76rem' // sidebar subheaders' font size
 
-// This is the color for the top bar
-addGlobalStyle(':root {--top-colour: 2px solid #e14eca;}')
+var topColor = '#e14eca' // top bar color
+var tabColor = '#e14eca' // tab button color
 
-// This is the color for the tab buttons
-addGlobalStyle(':root {--tab-colour: #e14eca;}')
+var modalHeight = '95vh' // modal height
+var modalWidth = '85.5vw' // modal width
 
 
 // -- END OF SETTINGS --
 
+// variable declarations
+document.documentElement.style.setProperty('--sidebar-colour', sidebarColor);
+document.documentElement.style.setProperty('--top-colour', topColor);
+document.documentElement.style.setProperty('--tab-colour', tabColor);
+document.documentElement.style.setProperty('--sidebar-width', sidebarWidth);
+document.documentElement.style.setProperty('--modal-width', modalWidth);
+document.documentElement.style.setProperty('--modal-height', modalHeight);
+document.documentElement.style.setProperty('--sidebar-header-font-size', sidebarHeaderFontSize);
+document.documentElement.style.setProperty('--sidebar-subheader-font-size', sidebarSubHeaderFontSize);
+
+    // new changes
+//addGlobalStyle('span, div, a, th, td, p, h1, h2, h3, h4, h5, h6, input {font-family: Verdana !important;}') // change fonts to verdana
+//addGlobalStyle('.sidebar .nav li>a{text-transform:none;}') // remove uppercase sidebar
+//addGlobalStyle('b.caret {display: none;}') // hide sidebar caret
+//addGlobalStyle('.sidebar .nav>li>a>p{font-size: var(--sidebar-header-font-size);}') // make header larger
+//addGlobalStyle('.sidebar .nav li>a{font-size: var(--sidebar-subheader-font-size);}') // make subheader larger
+
+    // previous
 addGlobalStyle('.google-map {height:80vh;}') // resize google map (width is automatic)
 
     // modal (and respectively sidebar) resize
-addGlobalStyle('.modal-content {height:95vh;}') // increase modal height
-addGlobalStyle('.modal-content {width:85.5vw;}') // increase modal width
-addGlobalStyle(':root {--sidebar-width: 250px;}') // introduce sidebar-width variable
+addGlobalStyle('.modal-content {height:var(--modal-height;)}') // set modal height
+addGlobalStyle('.modal-content {width:var(--modal-width);}') // set modal width
 addGlobalStyle('.sidebar {width: var(--sidebar-width);}') // set sidebar width to variable value
-addGlobalStyle('.modal-dialog {margin-left: calc(var(--sidebar-width) + 30px); margin-top: 1rem;}') // make modal start next to sidebar
+addGlobalStyle('.modal-dialog {margin-left: calc(var(--sidebar-width) + 10px); margin-top: 1rem;}') // make modal start next to sidebar
 
     // make green and red texts darker, to be more readable
 addGlobalStyle('.text-success {color: #008000!important;}')
@@ -88,8 +107,6 @@ addGlobalStyle('.sidebar {height: 200%!important; margin-top: 0px;border-radius:
 addGlobalStyle('.footer .nav {margin-left: 15rem;}') // Shove footer to side to accomodate sidebar resize
 addGlobalStyle('.navbar .navbar-brand {margin-left: 11rem;}') // Shove navbar to side to accomodate sidebar resize
 addGlobalStyle('.sidebar {margin-left:0px;}') // Start sidebar at left of screen
-addGlobalStyle('.nav>li>a>p {font-size: 12px;}') // increase sidebar font size by 2px
-addGlobalStyle('b.caret {display: none;}') // hide sidebar caret
 
     // REMOVE Toggle button
 addGlobalStyle('.navbar-minimize-fixed { display:none; }')
