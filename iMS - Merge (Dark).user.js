@@ -2,7 +2,7 @@
 /* globals jQuery, $, waitForKeyElements */
 // @name         iMS - Merge (Dark)
 // @namespace    http://imssystems.tech/
-// @version      0.1.6
+// @version      0.1.7
 // @description  try to take over the world!
 // @author       You
 // @match      https://*.imssystems.tech/*
@@ -48,6 +48,7 @@ var modalWidth = '85.5vw' // modal width
 
 var backgroundColor = '#222222' // main bg color - prev #1e1e24
 var cardColor = '#141414' // card bg color - prev #27293d
+var progressColor = '#b8b8b8'
 
 // -- END OF SETTINGS --
 
@@ -63,6 +64,7 @@ document.documentElement.style.setProperty('--sidebar-subheader-font-size', side
 document.documentElement.style.setProperty('--content-bg-color', backgroundColor);
 document.documentElement.style.setProperty('--card-bg-color', cardColor);
 document.documentElement.style.setProperty('--inactive-tab-color', inactiveTabColor);
+document.documentElement.style.setProperty('--progress-color', progressColor);
 
     // new changes
 //addGlobalStyle('span, div, a, th, td, p, h1, h2, h3, h4, h5, h6, input {font-family: Verdana !important;}') // change fonts to verdana
@@ -72,6 +74,7 @@ document.documentElement.style.setProperty('--inactive-tab-color', inactiveTabCo
 //addGlobalStyle('.sidebar .nav li>a{font-size: var(--sidebar-subheader-font-size);}') // make subheader larger
 addGlobalStyle('.card{background-color: var(--card-bg-color);}') // set card bg color
 addGlobalStyle('.block {display:none;}') // hide block display on users profile page
+addGlobalStyle('.progress-bar{background-color: var(--progress-color);}')
 
     // previous
 addGlobalStyle('.google-map {height:80vh;}') // resize google map (width is automatic)
