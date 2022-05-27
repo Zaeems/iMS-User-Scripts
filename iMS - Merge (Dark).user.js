@@ -2,10 +2,10 @@
 /* globals jQuery, $, waitForKeyElements */
 // @name         iMS - Merge (Dark)
 // @namespace    http://imssystems.tech/
-// @version      0.1.5
+// @version      0.1.6
 // @description  try to take over the world!
 // @author       You
-// @include      https://*.imssystems.tech/*
+// @match      https://*.imssystems.tech/*
 // @icon         https://staging.imssystems.tech/favicon.png
 // @grant GM_log
 // @grant window.onurlchange
@@ -34,17 +34,20 @@ function addGlobalStyle(css) {
 // -- START OF SETTINGS
 // ADJUST YOUR SETTINGS HERE
 
-var sidebarColor = '#e14eca' // sidebar color
+var sidebarColor = '#1c1c1c' // sidebar color - prev #e14eca
 var sidebarWidth = '250px' // sidebar width
 var sidebarHeaderFontSize = '0.9rem' // sidebar headers' font size
 var sidebarSubHeaderFontSize = '0.76rem' // sidebar subheaders' font size
 
-var topColor = '#e14eca' // top bar color
-var tabColor = '#e14eca' // tab button color
+var topColor = '#1c1c1c' // top bar color
+var tabColor = '#1c1c1c' // tab button color
+var inactiveTabColor = '#000000' // inactive tab's color
 
 var modalHeight = '95vh' // modal height
 var modalWidth = '85.5vw' // modal width
 
+var backgroundColor = '#222222' // main bg color - prev #1e1e24
+var cardColor = '#141414' // card bg color - prev #27293d
 
 // -- END OF SETTINGS --
 
@@ -57,6 +60,9 @@ document.documentElement.style.setProperty('--modal-width', modalWidth);
 document.documentElement.style.setProperty('--modal-height', modalHeight);
 document.documentElement.style.setProperty('--sidebar-header-font-size', sidebarHeaderFontSize);
 document.documentElement.style.setProperty('--sidebar-subheader-font-size', sidebarSubHeaderFontSize);
+document.documentElement.style.setProperty('--content-bg-color', backgroundColor);
+document.documentElement.style.setProperty('--card-bg-color', cardColor);
+document.documentElement.style.setProperty('--inactive-tab-color', inactiveTabColor);
 
     // new changes
 //addGlobalStyle('span, div, a, th, td, p, h1, h2, h3, h4, h5, h6, input {font-family: Verdana !important;}') // change fonts to verdana
@@ -64,6 +70,8 @@ document.documentElement.style.setProperty('--sidebar-subheader-font-size', side
 //addGlobalStyle('b.caret {display: none;}') // hide sidebar caret
 //addGlobalStyle('.sidebar .nav>li>a>p{font-size: var(--sidebar-header-font-size);}') // make header larger
 //addGlobalStyle('.sidebar .nav li>a{font-size: var(--sidebar-subheader-font-size);}') // make subheader larger
+addGlobalStyle('.card{background-color: var(--card-bg-color);}') // set card bg color
+addGlobalStyle('.block {display:none;}') // hide block display on users profile page
 
     // previous
 addGlobalStyle('.google-map {height:80vh;}') // resize google map (width is automatic)
@@ -71,6 +79,7 @@ addGlobalStyle('.google-map {height:80vh;}') // resize google map (width is auto
     // modal (and respectively sidebar) resize
 addGlobalStyle('.modal-content {height:var(--modal-height;)}') // set modal height
 addGlobalStyle('.modal-content {width:var(--modal-width);}') // set modal width
+addGlobalStyle('.modal .modal-dialog .modal-content {background-color:var(--background-color);}') // set modal bg color to main bg color
 addGlobalStyle('.sidebar {width: var(--sidebar-width);}') // set sidebar width to variable value
 addGlobalStyle('.modal-dialog {margin-left: calc(var(--sidebar-width) + 10px); margin-top: 1rem;}') // make modal start next to sidebar
 
@@ -118,7 +127,7 @@ addGlobalStyle('input { caret-color: transparent; }') // remove input caret
     // TABCOLOR
 addGlobalStyle('.nav-pills.nav-pills-info .nav-item .nav-link.active, .nav-pills.nav-pills-info .nav-item .nav-link.active:focus, .nav-pills.nav-pills-info .nav-item .nav-link.active:hover{background-color: var(--tab-colour);}')
 addGlobalStyle('.nav-pills.nav-pills-info .nav-item .nav-link.active, .nav-pills.nav-pills-info .nav-item .nav-link.active:focus, .nav-pills.nav-pills-info .nav-item .nav-link.active:hover{background-image: var(--tab-colour);}')
-
+addGlobalStyle('.nav-pills .nav-item .nav-link {background-color: var(--inactive-tab-color);}')
     // Fix body + footer going blue
-addGlobalStyle('.main-panel>.content {background-color: #1e1e24;}')
-addGlobalStyle('.footer {background-color: #1e1e24;}')
+addGlobalStyle('.main-panel>.content {background-color: var(--content-bg-color);}')
+addGlobalStyle('.footer {background-color: var(--content-bg-color);}')
