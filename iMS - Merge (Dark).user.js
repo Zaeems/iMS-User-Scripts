@@ -93,9 +93,8 @@ addGlobalStyle('.btn-info.btn-link {color: #1d8cf8 !important;}')
 addGlobalStyle('.btn-warning.btn-link {color: #ff8d72 !important;}')
 addGlobalStyle('.btn-danger.btn-link {color: #ff0057 !important;}')
 addGlobalStyle('.ReactTable .rt-thead .rt-th.-cursor-pointer>div:first-of-type:after, .ReactTable .rt-thead .rt-th.-cursor-pointer>div:first-of-type:before {opacity: 0.7;}') // adjust sortBy to be more visible
-    // make main scrollbar same as card, with main bg color
-addGlobalStyle('::-webkit-scrollbar-thumb {background-color: var(--content-bg-color);}')
-addGlobalStyle('::-webkit-scrollbar-track {background-color: var(--card-bg-color);}')
+    // make main scrollbar bg color same as body
+addGlobalStyle('::-webkit-scrollbar-track {background-color: var(--content-bg-color);}')
     // adjust sidebar color
 addGlobalStyle('.sidebar {background: linear-gradient(0deg,#e14eca,#e14eca);}')
 addGlobalStyle('.off-canvas-sidebar[data=blue], .sidebar[data=blue] {background: var(--sidebar-colour);}') // blue -> variable
