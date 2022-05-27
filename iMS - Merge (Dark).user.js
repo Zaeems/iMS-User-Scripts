@@ -2,7 +2,7 @@
 /* globals jQuery, $, waitForKeyElements */
 // @name         iMS - Merge (Dark)
 // @namespace    http://imssystems.tech/
-// @version      0.1.7
+// @version      0.1.8
 // @description  try to take over the world!
 // @author       You
 // @match      https://*.imssystems.tech/*
@@ -75,17 +75,15 @@ document.documentElement.style.setProperty('--progress-color', progressColor);
 addGlobalStyle('.card{background-color: var(--card-bg-color);}') // set card bg color
 addGlobalStyle('.block {display:none;}') // hide block display on users profile page
 addGlobalStyle('.progress-bar{background-color: var(--progress-color);}')
+addGlobalStyle('.modal-content {background-color:var(--card-bg-color) !important;}') // set modal bg color to card bg color
 
     // previous
 addGlobalStyle('.google-map {height:80vh;}') // resize google map (width is automatic)
-
     // modal (and respectively sidebar) resize
 addGlobalStyle('.modal-content {height:var(--modal-height;)}') // set modal height
 addGlobalStyle('.modal-content {width:var(--modal-width);}') // set modal width
-addGlobalStyle('.modal-content {background-color:var(--content-bg-color) !important;}') // set modal bg color to main bg color
 addGlobalStyle('.sidebar {width: var(--sidebar-width);}') // set sidebar width to variable value
 addGlobalStyle('.modal-dialog {margin-left: calc(var(--sidebar-width) + 10px); margin-top: 1rem;}') // make modal start next to sidebar
-
     // make green and red texts darker, to be more readable
 addGlobalStyle('.text-success {color: #008000!important;}')
 addGlobalStyle('.text-danger {color: #ff0000!important;}')
@@ -94,11 +92,9 @@ addGlobalStyle('.btn-info.btn-link {color: #1d8cf8 !important;}')
 addGlobalStyle('.btn-warning.btn-link {color: #ff8d72 !important;}')
 addGlobalStyle('.btn-danger.btn-link {color: #ff0057 !important;}')
 addGlobalStyle('.ReactTable .rt-thead .rt-th.-cursor-pointer>div:first-of-type:after, .ReactTable .rt-thead .rt-th.-cursor-pointer>div:first-of-type:before {opacity: 0.7;}') // adjust sortBy to be more visible
-
     // make main scrollbar purple, with transparent-purple background
 addGlobalStyle('::-webkit-scrollbar-thumb {background-color: #e14eca;}')
 addGlobalStyle('::-webkit-scrollbar-track {background-color: #fbe9f9;}')
-
     // adjust sidebar color
 addGlobalStyle('.sidebar {background: linear-gradient(0deg,#e14eca,#e14eca);}')
 addGlobalStyle('.off-canvas-sidebar[data=blue], .sidebar[data=blue] {background: var(--sidebar-colour);}') // blue -> variable
@@ -106,27 +102,22 @@ addGlobalStyle('.off-canvas-sidebar[data=green], .sidebar[data=green] {backgroun
 addGlobalStyle('.off-canvas-sidebar[data=orange], .sidebar[data=orange] {background: var(--sidebar-colour);}') // orange -> variable
 addGlobalStyle('.off-canvas-sidebar[data=red], .sidebar[data=red] {background: var(--sidebar-colour);}') // red -> variable
 addGlobalStyle('.off-canvas-sidebar[data=primary], .sidebar[data=primary] {background: var(--sidebar-colour);}') // purple -> variable
-
     // adjust top border color
 addGlobalStyle('.main-panel[data=blue]{border-top: var(--top-colour);}') // blue -> variable
 addGlobalStyle('.main-panel[data=green]{border-top: var(--top-colour);}') // green -> variable
 addGlobalStyle('.main-panel[data=orange]{border-top: var(--top-colour);}') // orange -> variable
 addGlobalStyle('.main-panel[data=red]{border-top: var(--top-colour);}') // red -> variable
 addGlobalStyle('.main-panel[data=primary]{border-top: var(--top-colour);}') // purple -> variable
-
     // FULLSIDEBAR
 addGlobalStyle('.sidebar {height: 200%!important; margin-top: 0px;border-radius: 0px;}') // Improved sidebar
 addGlobalStyle('.footer .nav {margin-left: 15rem;}') // Shove footer to side to accomodate sidebar resize
 addGlobalStyle('.navbar .navbar-brand {margin-left: 11rem;}') // Shove navbar to side to accomodate sidebar resize
 addGlobalStyle('.sidebar {margin-left:0px;}') // Start sidebar at left of screen
-
     // REMOVE Toggle button
 addGlobalStyle('.navbar-minimize-fixed { display:none; }')
-
     // RESIZABLETEXTBOXES
 addGlobalStyle('textarea.form-control {resize: vertical;}')
 addGlobalStyle('input { caret-color: transparent; }') // remove input caret
-
     // TABCOLOR
 addGlobalStyle('.nav-pills.nav-pills-info .nav-item .nav-link.active, .nav-pills.nav-pills-info .nav-item .nav-link.active:focus, .nav-pills.nav-pills-info .nav-item .nav-link.active:hover{background-color: var(--tab-colour);}')
 addGlobalStyle('.nav-pills.nav-pills-info .nav-item .nav-link.active, .nav-pills.nav-pills-info .nav-item .nav-link.active:focus, .nav-pills.nav-pills-info .nav-item .nav-link.active:hover{background-image: var(--tab-colour);}')
