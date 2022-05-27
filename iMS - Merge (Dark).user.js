@@ -2,7 +2,7 @@
 /* globals jQuery, $, waitForKeyElements */
 // @name         iMS - Merge (Dark)
 // @namespace    http://imssystems.tech/
-// @version      0.2.0
+// @version      0.2.1
 // @description  try to take over the world!
 // @author       You
 // @match      https://*.imssystems.tech/*
@@ -77,6 +77,7 @@ addGlobalStyle('.block {display:none;}') // hide block display on users profile 
 addGlobalStyle('.progress-bar{background-color: var(--progress-color);}')
 addGlobalStyle('.modal-content {background-color:var(--card-bg-color) !important;}') // set modal bg color to card bg color
 addGlobalStyle('div>i.tim-icons, div>i.fas{background-color: var(--card-bg-color);}')
+addGlobalStyle('div.info-icon { background-image:none !important; background-color: var(--card-bg-color) !important; }')
 
     // previous
 addGlobalStyle('.google-map {height:80vh;}') // resize google map (width is automatic)
