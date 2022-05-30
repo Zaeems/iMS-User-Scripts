@@ -34,21 +34,21 @@ function addGlobalStyle(css) {
 // -- START OF SETTINGS
 // ADJUST YOUR SETTINGS HERE
 
-var sidebarColor = '#1c1c1c' // sidebar color - prev #e14eca
+var sidebarColor = '#e14eca' // sidebar color
 var sidebarWidth = '250px' // sidebar width
 var sidebarHeaderFontSize = '0.9rem' // sidebar headers' font size
 var sidebarSubHeaderFontSize = '0.76rem' // sidebar subheaders' font size
 
-var topColor = '#1c1c1c' // top bar color
-var tabColor = '#1c1c1c' // tab button color
+var topColor = '#e14eca' // top bar color
+var tabColor = '#e14eca' // tab button color
 var inactiveTabColor = '#000000' // inactive tab's color
 
 var modalHeight = '95vh' // modal height
 var modalWidth = '85.5vw' // modal width
 
-var backgroundColor = '#222222' // main bg color - prev #1e1e24
-var cardColor = '#141414' // card bg color - prev #27293d
-var progressColor = '#b8b8b8'
+var backgroundColor = '#1e1e24'
+var cardColor = '#27293d'
+var progressColor = '#e14eca'
 
 // -- END OF SETTINGS --
 
