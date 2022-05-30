@@ -1,6 +1,6 @@
 // ==UserScript==
 /* globals jQuery, $, waitForKeyElements */
-// @name         iMS - Merge (Dark)
+// @name         Admin Center (Dark)
 // @namespace    http://imssystems.tech/
 // @version      0.2.1
 // @description  try to take over the world!
