@@ -2,7 +2,7 @@
 /* globals jQuery, $, waitForKeyElements */
 // @name         Purple (Dark)
 // @namespace    http://imssystems.tech/
-// @version      0.1.7
+// @version      0.1.8
 // @description  try to take over the world!
 // @author       You
 // @match      https://*.imssystems.tech/*
@@ -41,7 +41,7 @@ var sidebarSubHeaderFontSize = '0.76rem' // sidebar subheaders' font size
 
 var topColor = '#e14eca' // top bar color
 var tabColor = '#e14eca' // tab button color
-var inactiveTabColor = '#000000' // inactive tab's color
+var inactiveTabColor = '#191f31' // inactive tab's color
 
 var modalHeight = '95vh' // modal height
 var modalWidth = '85.5vw' // modal width
@@ -82,8 +82,7 @@ addGlobalStyle('div.info-icon { background-image:none !important; background-col
     // previous
 addGlobalStyle('.google-map {height:80vh;}') // resize google map (width is automatic)
     // modal (and respectively sidebar) resize
-addGlobalStyle('.modal-content {height:var(--modal-height;)}') // set modal height
-addGlobalStyle('.modal-content {width:var(--modal-width);}') // set modal width
+addGlobalStyle('.modal-content {height:var(--modal-height; width:var(--modal-width);)}') // set modal height+width
 addGlobalStyle('.sidebar {width: var(--sidebar-width);}') // set sidebar width to variable value
 addGlobalStyle('.modal-dialog {margin-left: calc(var(--sidebar-width) + 10px); margin-top: 1rem;}') // make modal start next to sidebar
     // make green and red texts darker, to be more readable
@@ -97,7 +96,7 @@ addGlobalStyle('.ReactTable .rt-thead .rt-th.-cursor-pointer>div:first-of-type:a
     // make main scrollbar bg color same as body
 addGlobalStyle('::-webkit-scrollbar-track {background-color: var(--content-bg-color);}')
     // adjust sidebar color
-addGlobalStyle('.sidebar {background: linear-gradient(0deg,#e14eca,#e14eca);}')
+addGlobalStyle('.sidebar {background: var(--sidebar-colour);}')
 addGlobalStyle('.off-canvas-sidebar[data=blue], .sidebar[data=blue] {background: var(--sidebar-colour);}') // blue -> variable
 addGlobalStyle('.off-canvas-sidebar[data=green], .sidebar[data=green] {background: var(--sidebar-colour);}') // green -> variable
 addGlobalStyle('.off-canvas-sidebar[data=orange], .sidebar[data=orange] {background: var(--sidebar-colour);}') // orange -> variable
@@ -120,8 +119,7 @@ addGlobalStyle('.navbar-minimize-fixed { display:none; }')
 addGlobalStyle('textarea.form-control {resize: vertical;}')
 addGlobalStyle('input { caret-color: transparent; }') // remove input caret
     // TABCOLOR
-addGlobalStyle('.nav-pills.nav-pills-info .nav-item .nav-link.active, .nav-pills.nav-pills-info .nav-item .nav-link.active:focus, .nav-pills.nav-pills-info .nav-item .nav-link.active:hover{background-color: var(--tab-colour);}')
-addGlobalStyle('.nav-pills.nav-pills-info .nav-item .nav-link.active, .nav-pills.nav-pills-info .nav-item .nav-link.active:focus, .nav-pills.nav-pills-info .nav-item .nav-link.active:hover{background-image: var(--tab-colour);}')
+addGlobalStyle('.nav-pills.nav-pills-info .nav-item .nav-link.active, .nav-pills.nav-pills-info .nav-item .nav-link.active:focus, .nav-pills.nav-pills-info .nav-item .nav-link.active:hover{background-color: var(--tab-colour); background-image: var(--tab-colour);}')
 addGlobalStyle('.nav-pills .nav-item .nav-link {background-color: var(--inactive-tab-color);}')
     // Fix body + footer going blue
 addGlobalStyle('.main-panel>.content {background-color: var(--content-bg-color);}')
