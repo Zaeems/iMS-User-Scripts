@@ -2,10 +2,10 @@
 /* globals jQuery, $, waitForKeyElements */
 // @name         Admin Center (Dark)
 // @namespace    http://imssystems.tech/
-// @version      0.2.1
+// @version      0.2.2
 // @description  try to take over the world!
 // @author       You
-// @match      https://*.imssystems.tech/*
+// @match      https://*.imssystems.tech/admin/*
 // @icon         https://staging.imssystems.tech/favicon.png
 // @grant GM_log
 // @grant window.onurlchange
@@ -50,6 +50,9 @@ var backgroundColor = '#222222' // main bg color - prev #1e1e24
 var cardColor = '#141414' // card bg color - prev #27293d
 var progressColor = '#b8b8b8'
 
+var notificationBackground = '#1d1d1d' // notification menu bg color
+var notificationText = '#FFFFFF' // notification text color
+
 // -- END OF SETTINGS --
 
 // variable declarations
@@ -65,6 +68,9 @@ document.documentElement.style.setProperty('--content-bg-color', backgroundColor
 document.documentElement.style.setProperty('--card-bg-color', cardColor);
 document.documentElement.style.setProperty('--inactive-tab-color', inactiveTabColor);
 document.documentElement.style.setProperty('--progress-color', progressColor);
+document.documentElement.style.setProperty('--notification-bg-color', notificationBackground);
+document.documentElement.style.setProperty('--notification-fg-color', notificationText);
+
 
     // new changes
 //addGlobalStyle('span, div, a, th, td, p, h1, h2, h3, h4, h5, h6, input {font-family: Verdana !important;}') // change fonts to verdana
@@ -78,6 +84,8 @@ addGlobalStyle('.progress-bar{background-color: var(--progress-color);}')
 addGlobalStyle('.modal-content {background-color:var(--card-bg-color) !important;}') // set modal bg color to card bg color
 addGlobalStyle('div>i.tim-icons, div>i.fas{background-color: var(--card-bg-color);}')
 addGlobalStyle('div.info-icon { background-image:none !important; background-color: var(--card-bg-color) !important; }')
+addGlobalStyle('.notification-menu {background-color: var(--notification-bg-color);')
+addGlobalStyle('.text-default {color: var(--notification-fg-color) !important;')
 
     // previous
 addGlobalStyle('.google-map {height:80vh;}') // resize google map (width is automatic)
@@ -97,7 +105,7 @@ addGlobalStyle('.ReactTable .rt-thead .rt-th.-cursor-pointer>div:first-of-type:a
     // make main scrollbar bg color same as body
 addGlobalStyle('::-webkit-scrollbar-track {background-color: var(--content-bg-color);}')
     // adjust sidebar color
-addGlobalStyle('.sidebar {background: linear-gradient(0deg,#e14eca,#e14eca);}')
+addGlobalStyle('.sidebar {background: var(--sidebar-colour);}')
 addGlobalStyle('.off-canvas-sidebar[data=blue], .sidebar[data=blue] {background: var(--sidebar-colour);}') // blue -> variable
 addGlobalStyle('.off-canvas-sidebar[data=green], .sidebar[data=green] {background: var(--sidebar-colour);}') // green -> variable
 addGlobalStyle('.off-canvas-sidebar[data=orange], .sidebar[data=orange] {background: var(--sidebar-colour);}') // orange -> variable
