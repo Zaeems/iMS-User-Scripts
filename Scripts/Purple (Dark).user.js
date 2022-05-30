@@ -2,10 +2,10 @@
 /* globals jQuery, $, waitForKeyElements */
 // @name         Purple (Dark)
 // @namespace    http://imssystems.tech/
-// @version      0.1.8
+// @version      0.1.9
 // @description  try to take over the world!
 // @author       You
-// @match      https://*.imssystems.tech/*
+// @match      https://*.imssystems.tech/admin/*
 // @icon         https://staging.imssystems.tech/favicon.png
 // @grant GM_log
 // @grant window.onurlchange
@@ -50,6 +50,9 @@ var backgroundColor = '#1e1e24'
 var cardColor = '#27293d'
 var progressColor = '#e14eca'
 
+var notificationBackground = '#1d1d1d' // notification menu bg color
+var notificationText = '#FFFFFF' // notification text color
+
 // -- END OF SETTINGS --
 
 // variable declarations
@@ -65,6 +68,8 @@ document.documentElement.style.setProperty('--content-bg-color', backgroundColor
 document.documentElement.style.setProperty('--card-bg-color', cardColor);
 document.documentElement.style.setProperty('--inactive-tab-color', inactiveTabColor);
 document.documentElement.style.setProperty('--progress-color', progressColor);
+document.documentElement.style.setProperty('--notification-bg-color', notificationBackground);
+document.documentElement.style.setProperty('--notification-fg-color', notificationText);
 
     // new changes
 //addGlobalStyle('span, div, a, th, td, p, h1, h2, h3, h4, h5, h6, input {font-family: Verdana !important;}') // change fonts to verdana
@@ -78,6 +83,8 @@ addGlobalStyle('.progress-bar{background-color: var(--progress-color);}')
 addGlobalStyle('.modal-content {background-color:var(--card-bg-color) !important;}') // set modal bg color to card bg color
 addGlobalStyle('div>i.tim-icons, div>i.fas{background-color: var(--card-bg-color);}')
 addGlobalStyle('div.info-icon { background-image:none !important; background-color: var(--card-bg-color) !important; }')
+addGlobalStyle('.notification-menu {background-color: var(--notification-bg-color);')
+addGlobalStyle('.text-default {color: var(--notification-fg-color) !important;')
 
     // previous
 addGlobalStyle('.google-map {height:80vh;}') // resize google map (width is automatic)
