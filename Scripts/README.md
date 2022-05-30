@@ -5,6 +5,6 @@ Requires [Tampermonkey](https://www.tampermonkey.net) or [Greasemonkey](https://
 
 Once downloaded either of the above, open the desired script and click the `Raw` button, then install using the extension
 
-iMS Dark:
+Windows Admin Center:
 
-![image](https://user-images.githubusercontent.com/46079004/170692448-b9fffeaa-e028-45ef-a030-cf1052bfaf65.png)
+![image](https://user-images.githubusercontent.com/46079004/170972361-481e049e-1e4f-460b-a9af-424064c66323.png)
