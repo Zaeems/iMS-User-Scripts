@@ -2,10 +2,11 @@
 /* globals jQuery, $, waitForKeyElements */
 // @name         Admin Center (Dark)
 // @namespace    http://imssystems.tech/
-// @version      0.2.3
+// @version      0.2.4
 // @description  try to take over the world!
 // @author       You
 // @match        https://*.imssystems.tech/*
+// @exclude      https://knowledge-base.imssystems.tech/*
 // @icon         https://staging.imssystems.tech/favicon.png
 // @grant GM_log
 // @grant window.onurlchange
@@ -74,11 +75,15 @@ document.documentElement.style.setProperty('--notification-fg-color', notificati
  // -- LATEST FEATURES --
 
  // new changes
+addGlobalStyle('.page-item.active>.page-link{background: var(--content-bg-color) !important;}') // adjust pagination active list item bg color from purple -> variable
+addGlobalStyle('.navbar .navbar-wrapper {margin-left: calc(var(--sidebar-width)/4);}') // adjust page title past sidebar
+addGlobalStyle('.btn, .navbar .navbar-nav>a.btn{background: var(--card-bg-color);}')
 addGlobalStyle('div>i.tim-icons, div>i.fas{background-color: var(--card-bg-color);}') // change icon background color
 addGlobalStyle('div.info-icon { background-image:none !important; background-color: var(--card-bg-color) !important; }') // change icon background color
 addGlobalStyle('.notification-menu {background-color: var(--notification-bg-color);') // chang notification menu backgorund color
 addGlobalStyle('.text-default {color: var(--notification-fg-color) !important;') // change notification font color
 addGlobalStyle('.react-select__menu {background-color: var(--notification-bg-color) !important;') // change dropdown menu background color
+addGlobalStyle('.dropdown-menu {background: var(--notification-bg-color) !important;') // change more dropdown menu background color
 //addGlobalStyle('span, div, a, th, td, p, h1, h2, h3, h4, h5, h6, input {font-family: Verdana !important;}') // change fonts to verdana
 //addGlobalStyle('.sidebar .nav li>a{text-transform:none;}') // remove uppercase sidebar
 //addGlobalStyle('b.caret {display: none;}') // hide sidebar caret
@@ -135,6 +140,7 @@ addGlobalStyle('.footer .nav {margin-left: 15rem;}') // Shove footer to side to 
 addGlobalStyle('.navbar .navbar-brand {margin-left: 11rem;}') // Shove navbar to side to accomodate sidebar resize
 addGlobalStyle('.sidebar {margin-left:0px;}') // Start sidebar at left of screen
 addGlobalStyle('.navbar-minimize-fixed { display:none; }') // remove toggle button
+addGlobalStyle('.minimize-sidebar { display:none; }') // remove toggle button
 
  // RESIZABLETEXTBOXES
 addGlobalStyle('textarea.form-control {resize: vertical;}')
