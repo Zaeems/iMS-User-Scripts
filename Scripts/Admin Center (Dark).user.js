@@ -86,13 +86,13 @@ addGlobalStyle('.react-select__menu {background-color: var(--notification-bg-col
 //addGlobalStyle('.sidebar .nav li>a{font-size: var(--sidebar-subheader-font-size);}') // make subheader larger
 
  // previous
+addGlobalStyle('div>i.tim-icons, div>i.fas{background-color: var(--card-bg-color);}') // change icon background color
+addGlobalStyle('div.info-icon { background-image:none !important; background-color: var(--card-bg-color) !important; }') // change icon background color
 addGlobalStyle('.card{background-color: var(--card-bg-color);}') // set card bg color
 addGlobalStyle('.block {display:none;}') // hide block display on users profile page
-addGlobalStyle('.modal-content {background-color:var(--card-bg-color) !important;}') // set modal bg color to card bg color
-
 
  // -- Older features --
-
+addGlobalStyle('.modal-content {background-color:var(--card-bg-color) !important;}') // set modal bg color to card bg color
 addGlobalStyle('.progress-bar{background-color: var(--progress-color);}') // progress bar color -> variable
 addGlobalStyle('.google-map {height:80vh;}') // resize google map (width is automatic)
 
