@@ -2,7 +2,7 @@
 /* globals jQuery, $, waitForKeyElements */
 // @name         Admin Center (Dark)
 // @namespace    http://imssystems.tech/
-// @version      0.2.4
+// @version      0.2.5
 // @description  try to take over the world!
 // @author       You
 // @match        https://*.imssystems.tech/*
@@ -75,6 +75,8 @@ document.documentElement.style.setProperty('--notification-fg-color', notificati
  // -- LATEST FEATURES --
 
  // new changes
+addGlobalStyle('.fixed-plugin .dropdown-menu{right:69px !important; top: -15px !important; width: 230px !important;}')
+addGlobalStyle('.fixed-plugin{position:absolute; right:215px; top: 8px; border-radius: 0px; z-index:1111; height:0;}')
 addGlobalStyle('.page-item.active>.page-link{background: var(--content-bg-color) !important;}') // adjust pagination active list item bg color from purple -> variable
 addGlobalStyle('.navbar .navbar-wrapper {margin-left: calc(var(--sidebar-width)/4);}') // adjust page title past sidebar
 addGlobalStyle('.btn, .navbar .navbar-nav>a.btn{background: var(--card-bg-color);}')
