@@ -2,7 +2,7 @@
 /* globals jQuery, $, waitForKeyElements */
 // @name         Admin Center (Dark)
 // @namespace    http://imssystems.tech/
-// @version      0.2.5
+// @version      0.2.6
 // @description  try to take over the world!
 // @author       You
 // @match        https://*.imssystems.tech/*
@@ -75,17 +75,12 @@ document.documentElement.style.setProperty('--notification-fg-color', notificati
  // -- LATEST FEATURES --
 
  // new changes
-addGlobalStyle('.fixed-plugin .dropdown-menu{right:69px !important; top: -15px !important; width: 230px !important;}')
-addGlobalStyle('.fixed-plugin{position:absolute; right:215px; top: 8px; border-radius: 0px; z-index:1111; height:0;}')
-addGlobalStyle('.page-item.active>.page-link{background: var(--content-bg-color) !important;}') // adjust pagination active list item bg color from purple -> variable
-addGlobalStyle('.navbar .navbar-wrapper {margin-left: calc(var(--sidebar-width)/4);}') // adjust page title past sidebar
-addGlobalStyle('.btn, .navbar .navbar-nav>a.btn{background: var(--card-bg-color);}')
-addGlobalStyle('div>i.tim-icons, div>i.fas{background-color: var(--card-bg-color);}') // change icon background color
-addGlobalStyle('div.info-icon { background-image:none !important; background-color: var(--card-bg-color) !important; }') // change icon background color
-addGlobalStyle('.notification-menu {background-color: var(--notification-bg-color);') // chang notification menu backgorund color
-addGlobalStyle('.text-default {color: var(--notification-fg-color) !important;') // change notification font color
-addGlobalStyle('.react-select__menu {background-color: var(--notification-bg-color) !important;') // change dropdown menu background color
-addGlobalStyle('.dropdown-menu {background: var(--notification-bg-color) !important;') // change more dropdown menu background color
+addGlobalStyle('.login-page .card-login {transform: scale(1.5);}') // resize login to 150%
+addGlobalStyle('.login-page .my-auto {display:none;}') // hide logo div
+addGlobalStyle('.container-login {background-color: var(--content-bg-color);}') // adjusts login screen bg-color
+addGlobalStyle('canvas {display:none;}') // hide animated background on login screen
+addGlobalStyle('.fixed-plugin .dropdown-menu{right:69px !important; top: -12px !important; width: 230px !important;}') // move settings dropdown to top left
+addGlobalStyle('.fixed-plugin{position:absolute; right:215px; top: 8px; border-radius: 0px; z-index:1111; height:0;}') // move settings button to navbar
 //addGlobalStyle('span, div, a, th, td, p, h1, h2, h3, h4, h5, h6, input {font-family: Verdana !important;}') // change fonts to verdana
 //addGlobalStyle('.sidebar .nav li>a{text-transform:none;}') // remove uppercase sidebar
 //addGlobalStyle('b.caret {display: none;}') // hide sidebar caret
@@ -93,12 +88,21 @@ addGlobalStyle('.dropdown-menu {background: var(--notification-bg-color) !import
 //addGlobalStyle('.sidebar .nav li>a{font-size: var(--sidebar-subheader-font-size);}') // make subheader larger
 
  // previous
+addGlobalStyle('.page-item.active>.page-link{background: var(--content-bg-color) !important;}') // adjust pagination active list item bg color from purple -> variable
+addGlobalStyle('.navbar .navbar-wrapper {margin-left: calc(var(--sidebar-width)/4);}') // adjust page title past sidebar
+addGlobalStyle('.btn, .navbar .navbar-nav>a.btn, .btn-primary.disabled{background: var(--card-bg-color);}') // make buttons black
+addGlobalStyle('div>i.tim-icons, div>i.fas{background-color: var(--card-bg-color);}') // change icon background color
+addGlobalStyle('div.info-icon { background-image:none !important; background-color: var(--card-bg-color) !important; }') // change icon background color
+addGlobalStyle('.notification-menu {background-color: var(--notification-bg-color);') // chang notification menu backgorund color
+addGlobalStyle('.text-default {color: var(--notification-fg-color) !important;') // change notification font color
+addGlobalStyle('.react-select__menu {background-color: var(--notification-bg-color) !important;') // change dropdown menu background color
+addGlobalStyle('.dropdown-menu {background: var(--notification-bg-color) !important;') // change more dropdown menu background color
+
+ // -- Older features --
 addGlobalStyle('div>i.tim-icons, div>i.fas{background-color: var(--card-bg-color);}') // change icon background color
 addGlobalStyle('div.info-icon { background-image:none !important; background-color: var(--card-bg-color) !important; }') // change icon background color
 addGlobalStyle('.card{background-color: var(--card-bg-color);}') // set card bg color
 addGlobalStyle('.block {display:none;}') // hide block display on users profile page
-
- // -- Older features --
 addGlobalStyle('.modal-content {background-color:var(--card-bg-color) !important;}') // set modal bg color to card bg color
 addGlobalStyle('.progress-bar{background-color: var(--progress-color);}') // progress bar color -> variable
 addGlobalStyle('.google-map {height:80vh;}') // resize google map (width is automatic)
