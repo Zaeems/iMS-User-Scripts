@@ -9,7 +9,7 @@ Once either of the above have been installed, open the desired theme and click t
 
 **Windows Admin Center**:
 
-![image](https://user-images.githubusercontent.com/46079004/171170506-c8754028-40fd-45d6-bd36-339035a22009.png)
+![image](https://user-images.githubusercontent.com/46079004/171373046-3cb55f6f-20e9-444a-ab52-931467a3b17a.png)
 
 **Purple**: 
 
