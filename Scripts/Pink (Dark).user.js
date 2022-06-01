@@ -1,6 +1,6 @@
 // ==UserScript==
 /* globals jQuery, $, waitForKeyElements */
-// @name         Purple (Dark)
+// @name         Pink (Dark)
 // @namespace    http://imssystems.tech/
 // @version      0.2.7
 // @description  change theme of iMS
@@ -29,7 +29,7 @@ var modalWidth = '85.5vw' // modal width
 
 var backgroundColor = '#1e1e24' // main bg color
 var cardColor = '#27293d' // card bg color
-var progressColor = '#b8b8b8'
+var progressColor = '#e14eca'
 
 var notificationBackground = '#1d1d1d' // notification menu bg color
 var notificationText = '#FFFFFF' // notification text color
