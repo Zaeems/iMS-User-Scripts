@@ -2,7 +2,7 @@
 /* globals jQuery, $, waitForKeyElements */
 // @name         Pink (Dark)
 // @namespace    http://imssystems.tech/
-// @version      0.2.7
+// @version      0.2.8
 // @description  change theme of iMS
 // @author       You
 // @match        https://*.imssystems.tech/*
@@ -22,7 +22,6 @@ var sidebarSubHeaderFontSize = '0.76rem' // sidebar subheaders' font size
 
 var topColor = '#e14eca' // top bar color
 var tabColor = '#e14eca' // tab button color
-// var inactiveTabColor = '#000000' // inactive tab's color
 
 var modalHeight = '50vh' // minimum modal height
 var modalWidth = '85.5vw' // modal width
@@ -47,7 +46,6 @@ document.documentElement.style.setProperty('--sidebar-header-font-size', sidebar
 document.documentElement.style.setProperty('--sidebar-subheader-font-size', sidebarSubHeaderFontSize);
 document.documentElement.style.setProperty('--content-bg-color', backgroundColor);
 document.documentElement.style.setProperty('--card-bg-color', cardColor);
-// document.documentElement.style.setProperty('--inactive-tab-color', inactiveTabColor);
 document.documentElement.style.setProperty('--progress-color', progressColor);
 document.documentElement.style.setProperty('--notification-bg-color', notificationBackground);
 document.documentElement.style.setProperty('--notification-fg-color', notificationText);
@@ -55,24 +53,21 @@ document.documentElement.style.setProperty('--notification-fg-color', notificati
    // -- LATEST FEATURES --
 
 // new changes
+addGlobalStyle('.fixed-plugin .dropdown .dropdown-menu:after{top:32px;}')
 addGlobalStyle('.max-index{z-index:100000 !important;}')
 addGlobalStyle('.bg-secondary { background-color: var(--content-bg-color) !important;}') // adjusts dropdown pre-set value bg color (change BU)
-addGlobalStyle('.btn, .navbar .navbar-nav>a.btn, .btn-primary.disabled{border-style:solid; border-width: 1px; border-color: rgb(43, 53, 83); border-radius: 0.4285rem;}') // makes buttons more obvious
+//addGlobalStyle('.btn, .navbar .navbar-nav>a.btn, .btn-primary.disabled{border-style:solid; border-width: 1px; border-color: rgb(43, 53, 83); border-radius: 0.4285rem;}') // makes buttons more obvious
 addGlobalStyle('.login-page .card-login {transform: scale(1.25);}') // resize login to 125%
 addGlobalStyle('.login-page .my-auto {display:none;}') // hide logo div
 addGlobalStyle('.container-login {background-color: var(--content-bg-color);}') // adjusts login screen bg-color
 addGlobalStyle('canvas {display:none;}') // hide animated background on login screen
 addGlobalStyle('.fixed-plugin .dropdown-menu{right:69px !important; top: -12px !important; width: 233px !important;}') // move settings dropdown to top left
 addGlobalStyle('.fixed-plugin{position:absolute; right:215px; top: 8px; border-radius: 0px; z-index:1111; height:0;}') // move settings button to navbar
-//addGlobalStyle('span, div, a, th, td, p, h1, h2, h3, h4, h5, h6, input {font-family: Verdana !important;}') // change fonts to verdana
-//addGlobalStyle('b.caret {display: none;}') // hide sidebar caret
-//addGlobalStyle('.sidebar .nav>li>a>p{font-size: var(--sidebar-header-font-size);}') // make header larger
-//addGlobalStyle('.sidebar .nav li>a{font-size: var(--sidebar-subheader-font-size);}') // make subheader larger
 
 // previous
-addGlobalStyle('.page-item.active>.page-link{background: var(--content-bg-color) !important;}') // adjust pagination active list item bg color from purple -> variable
+//addGlobalStyle('.page-item.active>.page-link{background: var(--content-bg-color) !important;}') // adjust pagination active list item bg color from purple -> variable
 addGlobalStyle('.navbar .navbar-wrapper {margin-left: calc(var(--sidebar-width)/4);}') // adjust page title past sidebar
-addGlobalStyle('.btn, .navbar .navbar-nav>a.btn, .btn-primary.disabled{background: var(--card-bg-color);}') // make buttons black
+//addGlobalStyle('.btn, .navbar .navbar-nav>a.btn, .btn-primary.disabled{background: var(--card-bg-color);}') // make buttons black
 addGlobalStyle('div>i.tim-icons, div>i.fas{background-color: var(--card-bg-color);}') // change icon background color
 addGlobalStyle('div.info-icon { background-image:none !important; background-color: var(--card-bg-color) !important; }') // change icon background color
 addGlobalStyle('.notification-menu {background-color: var(--notification-bg-color);') // chang notification menu backgorund color
@@ -137,7 +132,6 @@ addGlobalStyle('input { caret-color: transparent; }') // remove input caret
 // tab color
 addGlobalStyle('.nav-pills.nav-pills-info .nav-item .nav-link.active, .nav-pills.nav-pills-info .nav-item .nav-link.active:focus, .nav-pills.nav-pills-info .nav-item .nav-link.active:hover{background-color: var(--tab-colour);}')
 addGlobalStyle('.nav-pills.nav-pills-info .nav-item .nav-link.active, .nav-pills.nav-pills-info .nav-item .nav-link.active:focus, .nav-pills.nav-pills-info .nav-item .nav-link.active:hover{background-image: var(--tab-colour);}')
-// addGlobalStyle('.nav-pills .nav-item .nav-link {background-color: var(--inactive-tab-color);}')
 
 // fix body + footer going blue
 addGlobalStyle('.main-panel>.content {background-color: var(--content-bg-color);}')
