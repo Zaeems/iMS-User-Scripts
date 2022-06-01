@@ -2,7 +2,7 @@
 /* globals jQuery, $, waitForKeyElements */
 // @name         Admin Center (Dark)
 // @namespace    http://imssystems.tech/
-// @version      0.2.7
+// @version      0.2.8
 // @description  change theme of iMS
 // @author       You
 // @match        https://*.imssystems.tech/*
@@ -55,6 +55,7 @@ document.documentElement.style.setProperty('--notification-fg-color', notificati
    // -- LATEST FEATURES --
 
 // new changes
+addGlobalStyle('.fixed-plugin .dropdown .dropdown-menu:after{top:32px;}')
 addGlobalStyle('.max-index{z-index:100000 !important;}')
 addGlobalStyle('.bg-secondary { background-color: var(--content-bg-color) !important;}') // adjusts dropdown pre-set value bg color (change BU)
 addGlobalStyle('.btn, .navbar .navbar-nav>a.btn, .btn-primary.disabled{border-style:outset; border-width: 3px; border-color: var(--content-bg-color)}') // makes buttons more obvious
