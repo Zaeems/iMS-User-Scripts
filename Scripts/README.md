@@ -16,4 +16,5 @@ Default                    |  **Windows Admin Center**
 
 Default                    |  **Purple**
 :-------------------------:|:-------------------------:
-![image](https://user-images.githubusercontent.com/46079004/171373951-5663596b-288b-467f-9c71-5f5f4a5d1b4a.png)  |  ![image](https://user-images.githubusercontent.com/46079004/171372936-dcccb5b6-3ef1-4f7e-adb2-fdb2452f5de7.png)
+![image](https://user-images.githubusercontent.com/46079004/171373951-5663596b-288b-467f-9c71-5f5f4a5d1b4a.png)  |  ![image](https://user-images.githubusercontent.com/46079004/171374611-f95c33a3-a33e-4e3d-95a4-3650057736a7.png)
+
