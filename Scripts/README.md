@@ -13,4 +13,4 @@ Once either of the above have been installed, open the desired theme and click t
 
 **Purple**: 
 
-![image](https://user-images.githubusercontent.com/46079004/170973407-1e9a390a-c0f0-4443-9a3b-a60ea496b2a6.png)
+![image](https://user-images.githubusercontent.com/46079004/171372936-dcccb5b6-3ef1-4f7e-adb2-fdb2452f5de7.png)
