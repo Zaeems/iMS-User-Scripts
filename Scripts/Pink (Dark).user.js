@@ -2,7 +2,7 @@
 /* globals jQuery, $, waitForKeyElements */
 // @name         Pink (Dark)
 // @namespace    http://imssystems.tech/
-// @version      0.2.8
+// @version      0.3.0
 // @description  change theme of iMS
 // @author       You
 // @match        https://*.imssystems.tech/*
@@ -17,8 +17,6 @@
 
 var sidebarColor = '#e14eca' // sidebar color
 var sidebarWidth = '250px' // sidebar width
-var sidebarHeaderFontSize = '0.9rem' // sidebar headers' font size
-var sidebarSubHeaderFontSize = '0.76rem' // sidebar subheaders' font size
 
 var topColor = '#e14eca' // top bar color
 var tabColor = '#e14eca' // tab button color
@@ -42,8 +40,6 @@ document.documentElement.style.setProperty('--tab-colour', tabColor);
 document.documentElement.style.setProperty('--sidebar-width', sidebarWidth);
 document.documentElement.style.setProperty('--modal-width', modalWidth);
 document.documentElement.style.setProperty('--modal-height', modalHeight);
-document.documentElement.style.setProperty('--sidebar-header-font-size', sidebarHeaderFontSize);
-document.documentElement.style.setProperty('--sidebar-subheader-font-size', sidebarSubHeaderFontSize);
 document.documentElement.style.setProperty('--content-bg-color', backgroundColor);
 document.documentElement.style.setProperty('--card-bg-color', cardColor);
 document.documentElement.style.setProperty('--progress-color', progressColor);
@@ -53,8 +49,11 @@ document.documentElement.style.setProperty('--notification-fg-color', notificati
    // -- LATEST FEATURES --
 
 // new changes
-addGlobalStyle('.fixed-plugin .dropdown .dropdown-menu:after{top:32px;}')
-addGlobalStyle('.max-index{z-index:100000 !important;}')
+addGlobalStyle('* {box-shadow: none !important;}') // remove all backdrop shadow
+addGlobalStyle('.rnc__notification-timer-filler{animation-duration: 15000ms !important;}') // increase notification timer 2s -> 15s
+addGlobalStyle('.rnc__base{z-index:100001;}') // put notification alert to top
+addGlobalStyle('.fixed-plugin .dropdown .dropdown-menu:after{top:32px;}') // menu icon to start from gear
+addGlobalStyle('.max-index{z-index:100000 !important;}') // modal to top
 addGlobalStyle('.bg-secondary { background-color: var(--content-bg-color) !important;}') // adjusts dropdown pre-set value bg color (change BU)
 //addGlobalStyle('.btn, .navbar .navbar-nav>a.btn, .btn-primary.disabled{border-style:solid; border-width: 1px; border-color: rgb(43, 53, 83); border-radius: 0.4285rem;}') // makes buttons more obvious
 addGlobalStyle('.login-page .card-login {transform: scale(1.25);}') // resize login to 125%
