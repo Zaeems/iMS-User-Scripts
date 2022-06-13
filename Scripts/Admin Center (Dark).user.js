@@ -2,7 +2,7 @@
 /* globals jQuery, $, waitForKeyElements */
 // @name         Admin Center (Dark)
 // @namespace    http://imssystems.tech/
-// @version      0.2.8
+// @version      0.3.0
 // @description  change theme of iMS
 // @author       You
 // @match        https://*.imssystems.tech/*
@@ -17,8 +17,6 @@
 
 var sidebarColor = '#1c1c1c' // sidebar color - prev #e14eca
 var sidebarWidth = '250px' // sidebar width
-var sidebarHeaderFontSize = '0.9rem' // sidebar headers' font size
-var sidebarSubHeaderFontSize = '0.76rem' // sidebar subheaders' font size
 
 var topColor = '#1c1c1c' // top bar color
 var tabColor = '#1c1c1c' // tab button color
@@ -43,8 +41,6 @@ document.documentElement.style.setProperty('--tab-colour', tabColor);
 document.documentElement.style.setProperty('--sidebar-width', sidebarWidth);
 document.documentElement.style.setProperty('--modal-width', modalWidth);
 document.documentElement.style.setProperty('--modal-height', modalHeight);
-document.documentElement.style.setProperty('--sidebar-header-font-size', sidebarHeaderFontSize);
-document.documentElement.style.setProperty('--sidebar-subheader-font-size', sidebarSubHeaderFontSize);
 document.documentElement.style.setProperty('--content-bg-color', backgroundColor);
 document.documentElement.style.setProperty('--card-bg-color', cardColor);
 document.documentElement.style.setProperty('--inactive-tab-color', inactiveTabColor);
@@ -55,8 +51,11 @@ document.documentElement.style.setProperty('--notification-fg-color', notificati
    // -- LATEST FEATURES --
 
 // new changes
-addGlobalStyle('.fixed-plugin .dropdown .dropdown-menu:after{top:32px;}')
-addGlobalStyle('.max-index{z-index:100000 !important;}')
+addGlobalStyle('* {box-shadow: none !important;}') // remove all backdrop shadow
+addGlobalStyle('.rnc__notification-timer-filler{animation-duration: 15000ms !important;}') // increase notification timer 2s -> 15s
+addGlobalStyle('.rnc__base{z-index:100001;}') // put notification alert to top
+addGlobalStyle('.fixed-plugin .dropdown .dropdown-menu:after{top:32px;}') // menu icon to start from gear
+addGlobalStyle('.max-index{z-index:100000 !important;}') // modal to top
 addGlobalStyle('.bg-secondary { background-color: var(--content-bg-color) !important;}') // adjusts dropdown pre-set value bg color (change BU)
 addGlobalStyle('.btn, .navbar .navbar-nav>a.btn, .btn-primary.disabled{border-style:outset; border-width: 3px; border-color: var(--content-bg-color)}') // makes buttons more obvious
 addGlobalStyle('.login-page .card-login {transform: scale(1.25);}') // resize login to 125%
@@ -65,10 +64,6 @@ addGlobalStyle('.container-login {background-color: var(--content-bg-color);}') 
 addGlobalStyle('canvas {display:none;}') // hide animated background on login screen
 addGlobalStyle('.fixed-plugin .dropdown-menu{right:69px !important; top: -12px !important; width: 233px !important;}') // move settings dropdown to top left
 addGlobalStyle('.fixed-plugin{position:absolute; right:215px; top: 8px; border-radius: 0px; z-index:1111; height:0;}') // move settings button to navbar
-//addGlobalStyle('span, div, a, th, td, p, h1, h2, h3, h4, h5, h6, input {font-family: Verdana !important;}') // change fonts to verdana
-//addGlobalStyle('b.caret {display: none;}') // hide sidebar caret
-//addGlobalStyle('.sidebar .nav>li>a>p{font-size: var(--sidebar-header-font-size);}') // make header larger
-//addGlobalStyle('.sidebar .nav li>a{font-size: var(--sidebar-subheader-font-size);}') // make subheader larger
 
 // previous
 addGlobalStyle('.page-item.active>.page-link{background: var(--content-bg-color) !important;}') // adjust pagination active list item bg color from purple -> variable
